@@ -10,7 +10,6 @@ class ErrorBoundry extends Component {
   }
 
   componentDidCatch(error, info) {
-    //if anything errors out it will run this lifecycle
     this.setState({ hasError: true });
   }
 
