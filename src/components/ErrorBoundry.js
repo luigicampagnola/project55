@@ -1,7 +1,6 @@
 import { Component } from "react";
 
 class ErrorBoundry extends Component {
-  // create component for a page
   constructor(props) {
     super(props);
     this.state = {
