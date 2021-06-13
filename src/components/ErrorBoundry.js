@@ -1,6 +1,7 @@
 import { Component } from "react";
 
 class ErrorBoundry extends Component {
+  // create component for a page
   constructor(props) {
     super(props);
     this.state = {
@@ -9,6 +10,7 @@ class ErrorBoundry extends Component {
   }
 
   componentDidCatch(error, info) {
+    //if anything errors out it will run this lifecycle
     this.setState({ hasError: true });
   }
 
