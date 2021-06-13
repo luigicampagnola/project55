@@ -1,24 +1,25 @@
-import { Component } from 'react';
+import { Component } from "react";
 
-class ErrorBoundry extends Component { // create component for a page
-    constructor(props){
-        super(props);
-        this.state = {
-            hasError: false
-        }
-    }
+class ErrorBoundry extends Component {
+  // create component for a page
+  constructor(props) {
+    super(props);
+    this.state = {
+      hasError: false,
+    };
+  }
 
-    componentDidCatch(error, info){    //if anything errors out it will run this lifecycle
-        this.setState({ hasError: true})
-    }
+  componentDidCatch(error, info) {
+    //if anything errors out it will run this lifecycle
+    this.setState({ hasError: true });
+  }
 
-    render() {
-        if (this.state.hasError) {
-            return <h1>Ooops. That is not good.</h1> // return this is any errors are true
-        }
-        return this.props.children;  // children is CardList
+  render() {
+    if (this.state.hasError) {
+      return <h1>Ooops. That is not good.</h1>; // return this is any errors are true
     }
+    return this.props.children;
+  }
 }
-
 
 export default ErrorBoundry;
