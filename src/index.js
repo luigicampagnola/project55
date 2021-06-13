@@ -5,8 +5,7 @@ import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
-/* import { robots } from "./robots";
-import CardList from "./CardList"; */
+
 
 ReactDOM.render(
   <App />,
