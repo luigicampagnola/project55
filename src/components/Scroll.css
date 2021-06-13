@@ -4,3 +4,4 @@ div::-webkit-scrollbar {
 div {
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+}
